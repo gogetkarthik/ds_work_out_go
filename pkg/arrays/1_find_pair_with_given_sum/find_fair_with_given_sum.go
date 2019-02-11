@@ -1,8 +1,8 @@
 package main
 
 import (
-	"data_structure_work_out_go/user_input"
-	"data_structure_work_out_go/util"
+	"data_structure_work_out_go/pkg/user_input"
+	"data_structure_work_out_go/pkg/util"
 	"fmt"
 	"sort"
 	"strconv"
