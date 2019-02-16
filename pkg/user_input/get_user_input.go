@@ -4,11 +4,12 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func GetLine() string {
 
-	fmt.Println("enter the required line input ")
+	//fmt.Println("enter the required line input ")
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -19,6 +20,20 @@ func GetLine() string {
 	fmt.Println(text)
 
 	return text
+
+}
+
+func GetInt() int {
+	str := GetLine()
+
+	iValue, err := strconv.ParseInt(str, 10, 64)
+
+	if err != nil {
+		fmt.Println("str to int convert failed " + err.Error())
+		os.Exit(1)
+	}
+
+	return int(iValue)
 
 }
 
