@@ -21,6 +21,8 @@ func insertionSort(sourceArray []int) {
 
 			if sourceArray[j] < sourceArray[j-1] {
 				sourceArray[j], sourceArray[j-1] = sourceArray[j-1], sourceArray[j]
+			} else {
+				break
 			}
 		}
 	}
